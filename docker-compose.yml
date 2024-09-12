@@ -7,6 +7,7 @@ services:
     container_name: validator
     volumes:
       - ./validator:/build/openethereum/worker
+      - ./log:/build/openethereum/log
     restart: unless-stopped
     entrypoint: /build/openethereum/start.sh
     environment:
